@@ -15,11 +15,7 @@ class QBTitle extends React.Component {
       },
     };
 
-    return (
-      <div>
-        <div style={style.title}>{this.props.content}</div>
-      </div>
-    );
+    return <span style={style.title}>{this.props.content}</span>;
   }
 }
 

@@ -11,7 +11,9 @@ function App() {
           src="https://emoji.slack-edge.com/TR84SSEKB/quill/d8c11c0a56e27814.png"
         />
         <span slot="seperator">|</span>
-        <QBTitle slot="text" content="Check Now" />
+        <span slot="text">
+          <QBTitle content="Visit Quillbot" />
+        </span>
       </qb-button>
     </div>
   );
