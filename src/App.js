@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./qb-button";
+import QBTitle from "./title";
+import logo from "./logo.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <qb-button color="salmon" hoverColor="darksalmon">
+        <img
+          slot="logo"
+          src="https://emoji.slack-edge.com/TR84SSEKB/quill/d8c11c0a56e27814.png"
+        />
+        <span slot="seperator">|</span>
+        <QBTitle slot="text" content="Check Now" />
+      </qb-button>
     </div>
   );
 }
