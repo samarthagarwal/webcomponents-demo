@@ -1,7 +1,6 @@
 import "./App.css";
 import "./qb-button";
 import QBTitle from "./title";
-import logo from "./logo.svg";
 
 function App() {
   return (

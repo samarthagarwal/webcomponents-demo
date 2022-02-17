@@ -47,6 +47,15 @@ class QBButton extends HTMLElement {
       this.root.getElementById("btn").style.backgroundColor =
         this.getAttribute("color") || "#489557";
     });
+
+    this.root.getElementById("btn").addEventListener("click", () => {
+      this.clickEvent = new CustomEvent("click", {
+        bubbles: true,
+        cancelable: false,
+      });
+      this.dispatchEvent(this.clickEvent);
+      console.log("Event dispatched!");
+    });
   }
 
   disconnectedCallback() {}
