@@ -38,7 +38,7 @@ class QBButton extends HTMLElement {
     this.root = this.attachShadow({ mode: "open" });
     this.root.appendChild(template.content.cloneNode(true));
     this.root.getElementById("btn").style.backgroundColor =
-      this.getAttribute("color");
+      this.getAttribute("color") || "#489557";
     this.root.getElementById("btn").addEventListener("mouseover", () => {
       this.root.getElementById("btn").style.backgroundColor =
         this.getAttribute("hoverColor") || "#41894e";
